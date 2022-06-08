@@ -1,7 +1,7 @@
 {
-  "name": "secure-real-time-multiplayer-game",
+  "name": "coin-racer",
   "version": "1.0.0",
-  "description": "Secure Real-Time Multiplayer Game",
+  "description": "Coin Racer",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
