@@ -23,7 +23,7 @@ app.use('/assets', express.static(process.cwd() + '/assets'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//For FCC testing purposes and enables user to connect from outside the hosting platform
+//For enabling user to connect from outside the hosting platform
 app.use(cors({ origin: '*' }));
 
 // Index page (static HTML)
@@ -32,7 +32,6 @@ app.route('/')
     res.sendFile(process.cwd() + '/views/index.html');
   });
 
-//For FCC testing purposes
 fccTestingRoutes(app);
 
 // 404 Not Found Middleware
